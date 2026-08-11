@@ -1,0 +1,11 @@
+# WordPress / local development
+.DS_Store
+Thumbs.db
+.env
+*.log
+node_modules/
+vendor/
+
+# Local editor files
+.vscode/
+.idea/
