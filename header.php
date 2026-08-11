@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div class="fyfaen-announcement"><div class="fyfaen-announcement__inner container">Norsk design · God kvalitet · Rask levering</div></div>
+<div class="fyfaen-announcement"><div class="fyfaen-announcement__inner container">Fri frakt når du handler for over 549,-</div></div>
 <header class="site-header">
 	<div class="site-header__inner container">
 		<div class="site-branding">
@@ -19,11 +19,9 @@ defined( 'ABSPATH' ) || exit;
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			<?php endif; ?>
 		</div>
-
 		<nav class="main-navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'fyfaen' ); ?>">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'fallback_cb' => false ) ); ?>
 		</nav>
-
 		<div class="site-header__actions">
 			<button class="fyfaen-menu-toggle" type="button" aria-expanded="false" aria-controls="fyfaen-mobile-nav" aria-label="<?php esc_attr_e( 'Åpne meny', 'fyfaen' ); ?>">
 				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
