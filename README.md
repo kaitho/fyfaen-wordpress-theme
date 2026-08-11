@@ -1,41 +1,26 @@
 # FYFAEN WordPress Theme
 
-Custom WordPress theme for [fyfaen.store](https://fyfaen.store/).
+Custom WooCommerce-first WordPress theme for **fyfaen.store**.
 
-## v0.1.0
+## Design goal
 
-This is the initial foundation for a WooCommerce-first custom theme.
+A modern Norwegian streetwear storefront: bold typography, editorial layouts, strong product imagery, minimal black/white visual language and a fast mobile experience.
 
-### Design boundary
+## Commerce boundary
 
-The theme is responsible for presentation, templates, navigation, CSS and frontend UX.
+The theme owns presentation only.
 
-The following remain owned by WordPress/WooCommerce and their plugins:
+- WooCommerce owns products, variants, cart, checkout, orders and store calculations.
+- Stripe, Vipps/MobilePay and other payment extensions own their payment flows.
+- The theme does not call payment APIs or implement order/payment processing.
+- Cart and checkout should be tested on staging with the real site's installed extensions before production activation.
 
-- Products and variations
-- Prices and inventory
-- Cart and checkout processing
-- Orders and customers
-- Stripe payments
-- Vipps/MobilePay payments
-- Other payment gateways
+## Current milestone
 
-The theme must not replace or modify payment processing logic.
+**0.5.0 — staging-ready presentation milestone**
 
-## Development
+Homepage, shop/archive, product presentation, cart styling and checkout styling are included. The checkout is intentionally styled without replacing WooCommerce's Cart/Checkout Blocks or payment gateway internals.
 
-The theme is intentionally being developed separately from the production site. Astra can remain installed as a fallback while the custom theme is tested.
+## QA
 
-## Roadmap
-
-- [ ] Recreate FYFAEN header/navigation
-- [ ] Build storefront/product grid
-- [ ] Build single-product presentation
-- [ ] Responsive mobile design
-- [ ] Cart presentation
-- [ ] Checkout presentation without changing payment logic
-- [ ] Footer and content pages
-- [ ] Accessibility and performance pass
-- [ ] WooCommerce compatibility testing
-- [ ] Stripe testing
-- [ ] Vipps/MobilePay testing
+Use [`docs/QA-CHECKLIST.md`](docs/QA-CHECKLIST.md) before production activation.
