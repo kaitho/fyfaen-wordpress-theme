@@ -1,0 +1,1 @@
+Initial repository created from an empty GitHub repository. The theme is intentionally a presentation layer and must not take ownership of payment or order processing.
