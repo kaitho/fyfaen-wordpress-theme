@@ -5,8 +5,11 @@ defined( 'ABSPATH' ) || exit;
 
 add_action( 'wp_enqueue_scripts', function () {
     $version = wp_get_theme()->get( 'Version' );
+    $polish_file = get_template_directory() . '/assets/css/polish.css';
+    $polish_version = file_exists( $polish_file ) ? (string) filemtime( $polish_file ) : $version;
+
     wp_enqueue_style( 'fyfaen-style', get_stylesheet_uri(), array(), $version );
-    wp_enqueue_style( 'fyfaen-polish', get_template_directory_uri() . '/assets/css/polish.css', array( 'fyfaen-style' ), $version );
+    wp_enqueue_style( 'fyfaen-polish', get_template_directory_uri() . '/assets/css/polish.css', array( 'fyfaen-style' ), $polish_version );
     wp_enqueue_script( 'fyfaen-theme', get_template_directory_uri() . '/assets/js/theme.js', array(), $version, true );
 
     if ( function_exists( 'is_product' ) && is_product() ) {
