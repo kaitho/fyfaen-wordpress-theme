@@ -11,12 +11,13 @@ add_action( 'wp_enqueue_scripts', function () {
     if ( function_exists( 'is_product' ) && is_product() ) {
         wp_enqueue_style( 'fyfaen-product', get_template_directory_uri() . '/assets/css/product.css', array( 'fyfaen-style' ), $version );
     }
-
     if ( function_exists( 'is_shop' ) && ( is_shop() || is_product_category() || is_product_tag() ) ) {
         wp_enqueue_style( 'fyfaen-shop', get_template_directory_uri() . '/assets/css/shop.css', array( 'fyfaen-style' ), $version );
     }
-
     if ( function_exists( 'is_cart' ) && is_cart() ) {
         wp_enqueue_style( 'fyfaen-cart', get_template_directory_uri() . '/assets/css/cart.css', array( 'fyfaen-style' ), $version );
+    }
+    if ( function_exists( 'is_checkout' ) && is_checkout() && ! is_order_received_page() ) {
+        wp_enqueue_style( 'fyfaen-checkout', get_template_directory_uri() . '/assets/css/checkout.css', array( 'fyfaen-style' ), $version );
     }
 } );

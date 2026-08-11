@@ -1,13 +1,18 @@
 # Changelog
 
-## 0.4.0 — Premium shop archive
+## 0.5.0 — Checkout-safe commerce presentation
 
-- Added a dedicated WooCommerce shop/category archive template.
-- Added editorial shop heading and collection intro.
-- Added clean result-count and sorting toolbar.
-- Added premium responsive product grid with stronger image treatment and hover actions.
-- Added refined pagination presentation.
-- Kept product queries, sorting, cart, checkout, orders and payment processing inside WooCommerce/plugins.
+- Added dedicated checkout styling without changing payment or order processing.
+- Added responsive checkout layout for classic WooCommerce checkout markup.
+- Kept the theme away from Cart/Checkout Blocks internals and payment gateway logic.
+- Added a development QA checklist covering cart, checkout and payment boundaries.
+
+## 0.4.0 — Shop and cart experience
+
+- Added editorial shop/archive presentation.
+- Added dedicated cart styling.
+- Added responsive product browsing and cart layouts.
+- Kept WooCommerce responsible for products, cart, orders and payments.
 
 ## 0.3.0 — Editorial homepage
 
@@ -15,7 +20,6 @@
 - Added responsive trust/highlight strip and marquee-style brand messaging.
 - Added dynamic featured products using WooCommerce product templates.
 - Added mobile-first layout refinements and responsive typography.
-- Kept all commerce, checkout, order and payment processing inside WooCommerce/plugins.
 
 ## 0.2.0 — Visual system
 
@@ -30,5 +34,4 @@
 - Added WordPress theme setup and navigation locations.
 - Added WooCommerce compatibility.
 - Added responsive base styling.
-- Added project documentation and development boundary.
 - Explicitly kept checkout, orders and payment processing outside the theme.
