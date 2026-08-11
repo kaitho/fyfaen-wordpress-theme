@@ -2,8 +2,16 @@
   'use strict';
 
   const body = document.body;
+  const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.fyfaen-menu-toggle');
   const mobileNav = document.getElementById('fyfaen-mobile-nav');
+
+  const updateHeader = () => {
+    if (header) header.classList.toggle('is-scrolled', window.scrollY > 18);
+  };
+
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, { passive: true });
 
   if (!toggle || !mobileNav) return;
 
