@@ -11,4 +11,8 @@ add_action( 'wp_enqueue_scripts', function () {
     if ( function_exists( 'is_product' ) && is_product() ) {
         wp_enqueue_style( 'fyfaen-product', get_template_directory_uri() . '/assets/css/product.css', array( 'fyfaen-style' ), $version );
     }
+
+    if ( function_exists( 'is_shop' ) && ( is_shop() || is_product_category() || is_product_tag() ) ) {
+        wp_enqueue_style( 'fyfaen-shop', get_template_directory_uri() . '/assets/css/shop.css', array( 'fyfaen-style' ), $version );
+    }
 } );
