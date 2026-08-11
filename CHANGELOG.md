@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0 — Premium shop archive
+
+- Added a dedicated WooCommerce shop/category archive template.
+- Added editorial shop heading and collection intro.
+- Added clean result-count and sorting toolbar.
+- Added premium responsive product grid with stronger image treatment and hover actions.
+- Added refined pagination presentation.
+- Kept product queries, sorting, cart, checkout, orders and payment processing inside WooCommerce/plugins.
+
 ## 0.3.0 — Editorial homepage
 
 - Added a bold FYFAEN editorial homepage with hero, featured products and brand statement sections.
