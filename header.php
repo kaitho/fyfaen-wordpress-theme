@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php endif; ?>
 		</div>
 		<nav class="main-navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'fyfaen' ); ?>">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'fallback_cb' => false ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'fallback_cb' => 'fyfaen_primary_menu_fallback' ) ); ?>
 		</nav>
 		<div class="site-header__actions">
 			<button class="fyfaen-menu-toggle" type="button" aria-expanded="false" aria-controls="fyfaen-mobile-nav" aria-label="<?php esc_attr_e( 'Åpne meny', 'fyfaen' ); ?>">
@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 	</div>
 	<nav id="fyfaen-mobile-nav" class="fyfaen-mobile-nav" aria-label="<?php esc_attr_e( 'Mobilmeny', 'fyfaen' ); ?>">
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'fallback_cb' => false ) ); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'fallback_cb' => 'fyfaen_primary_menu_fallback' ) ); ?>
 	</nav>
 </header>
 <main id="main" class="site-main">
