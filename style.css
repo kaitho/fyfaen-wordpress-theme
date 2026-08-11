@@ -1,0 +1,58 @@
+/*
+Theme Name: FYFAEN
+Theme URI: https://fyfaen.store/
+Author: Kai Thoresen
+Description: Custom WooCommerce-first WordPress theme for FYFAEN.store. Keeps WooCommerce and payment integrations independent from the theme.
+Version: 0.1.0
+Requires at least: 6.0
+Requires PHP: 8.1
+License: GPL-2.0-or-later
+Text Domain: fyfaen
+*/
+
+:root {
+  --fyfaen-bg: #ffffff;
+  --fyfaen-text: #111111;
+  --fyfaen-muted: #666666;
+  --fyfaen-border: #e5e5e5;
+  --fyfaen-accent: #111111;
+  --fyfaen-max-width: 1400px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--fyfaen-bg);
+  color: var(--fyfaen-text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; }
+img { max-width: 100%; height: auto; }
+.container { width: min(calc(100% - 32px), var(--fyfaen-max-width)); margin-inline: auto; }
+.site-main { min-height: 60vh; }
+
+.site-header { border-bottom: 1px solid var(--fyfaen-border); background: #fff; }
+.site-header__inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.site-branding a { text-decoration: none; font-weight: 900; letter-spacing: .08em; font-size: 1.35rem; }
+.main-navigation ul { list-style: none; display: flex; flex-wrap: wrap; gap: 24px; margin: 0; padding: 0; }
+.main-navigation a { text-decoration: none; font-weight: 600; }
+.site-header__cart { text-decoration: none; font-weight: 700; white-space: nowrap; }
+
+.site-footer { margin-top: 64px; padding: 40px 0; border-top: 1px solid var(--fyfaen-border); color: var(--fyfaen-muted); }
+
+.entry-title { line-height: 1.1; }
+
+@media (max-width: 760px) {
+  .site-header__inner { flex-wrap: wrap; padding-block: 16px; }
+  .main-navigation { width: 100%; order: 3; }
+  .main-navigation ul { gap: 14px 18px; }
+}
+
+/* WooCommerce presentation only. Checkout, cart, orders and payment logic remain WooCommerce-owned. */
+.woocommerce .site-main { padding-top: 32px; }
+.woocommerce ul.products { margin: 0; }
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button { border-radius: 0; background: var(--fyfaen-accent); color: #fff; }
