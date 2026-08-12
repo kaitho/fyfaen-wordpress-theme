@@ -3,7 +3,7 @@ Theme Name: FYFAEN
 Theme URI: https://fyfaen.store/
 Author: Kai Thoresen
 Description: Custom WooCommerce-first WordPress theme for FYFAEN.store. Keeps WooCommerce and payment integrations independent from the theme.
-Version: 0.5.1
+Version: 0.5.2
 Requires at least: 6.0
 Requires PHP: 8.1
 License: GPL-2.0-or-later
@@ -14,3 +14,17 @@ Text Domain: fyfaen
 /* FYFAEN single-product alignment */
 @media(min-width:701px){.woocommerce div.product{width:min(100%,1200px);margin-inline:auto;grid-template-columns:minmax(0,1fr) minmax(340px,.82fr);gap:clamp(50px,6vw,90px);align-items:start}.woocommerce div.product div.images{max-width:620px;margin-inline:auto;width:100%}.woocommerce div.product div.summary{max-width:500px;width:100%;margin-inline:auto;padding-top:12px}.woocommerce div.product .product_title{max-width:520px}.woocommerce div.product form.cart{max-width:500px}.woocommerce div.product .woocommerce-product-gallery{margin-inline:auto}}
 @media(max-width:700px){.woocommerce div.product div.images,.woocommerce div.product div.summary{width:100%;max-width:none}.woocommerce div.product div.summary{padding-top:0}}
+
+/* FYFAEN related products: full-width section below the main product */
+.woocommerce div.product.fyfaen-product-page{display:block;width:min(100%,1200px);margin-inline:auto}
+.fyfaen-product-page__main{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,.82fr);gap:clamp(50px,6vw,90px);align-items:start}
+.fyfaen-product-page__gallery{min-width:0}
+.fyfaen-product-page__info{min-width:0;max-width:500px;width:100%;margin-inline:auto;padding-top:12px}
+.fyfaen-product-page__details{width:100%;margin-top:clamp(80px,9vw,130px);padding-top:55px;border-top:1px solid var(--fy-line)}
+.fyfaen-product-page__details .related.products,.fyfaen-product-page__details .upsells.products{width:100%;margin:0 0 70px}
+.fyfaen-product-page__details .related.products>h2,.fyfaen-product-page__details .upsells.products>h2{margin:0 0 34px;font-size:clamp(3rem,6vw,6rem);line-height:.85;letter-spacing:-.065em;font-weight:950}
+.fyfaen-product-page__details ul.products{grid-template-columns:repeat(4,minmax(0,1fr));gap:30px 18px}
+.fyfaen-product-page__details ul.products li.product a img{aspect-ratio:4/5}
+.fyfaen-product-page__details ul.products li.product .woocommerce-loop-product__title{font-size:.92rem}
+@media(max-width:1050px){.fyfaen-product-page__main{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr)}.fyfaen-product-page__details ul.products{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.woocommerce div.product.fyfaen-product-page{width:100%}.fyfaen-product-page__main{grid-template-columns:1fr;gap:45px}.fyfaen-product-page__info{max-width:none;padding-top:0}.fyfaen-product-page__details{margin-top:65px;padding-top:38px}.fyfaen-product-page__details .related.products,.fyfaen-product-page__details .upsells.products{margin-bottom:50px}.fyfaen-product-page__details .related.products>h2,.fyfaen-product-page__details .upsells.products>h2{font-size:3.4rem}.fyfaen-product-page__details ul.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 10px}}
