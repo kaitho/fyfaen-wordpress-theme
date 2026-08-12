@@ -1,0 +1,31 @@
+name: Deploy FYFAEN theme to staging
+
+on:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fyfaen-staging-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout theme
+        uses: actions/checkout@v4
+
+      - name: Deploy theme via SFTP
+        uses: appleboy/scp-action@v1.0.0
+        with:
+          host: ${{ secrets.ONECOM_SFTP_HOST }}
+          username: ${{ secrets.ONECOM_SFTP_USERNAME }}
+          password: ${{ secrets.ONECOM_SFTP_PASSWORD }}
+          port: ${{ secrets.ONECOM_SFTP_PORT }}
+          source: "./*"
+          target: ${{ secrets.ONECOM_STAGING_THEME_DIR }}
+          strip_components: 0
