@@ -4,15 +4,20 @@
 .fyfaen-product-page__main,
 .fyfaen-product-page__gallery,
 .fyfaen-product-page__gallery .woocommerce-product-gallery,
+.fyfaen-product-page__gallery .woocommerce-product-gallery .flex-viewport,
 .fyfaen-product-page__gallery .woocommerce-product-gallery__wrapper,
 .fyfaen-product-page__gallery .woocommerce-product-gallery__image,
 .fyfaen-product-page__gallery .woocommerce-product-gallery__image a,
+.fyfaen-product-page__gallery .woocommerce-product-gallery__image figure,
+.fyfaen-product-page__gallery .woocommerce-product-gallery__image div,
 .fyfaen-product-page__gallery .flex-control-thumbs,
 .fyfaen-product-page__gallery .flex-control-thumbs li {
 	background-color:#fff!important;
+	background-image:none!important;
 }
 
 .fyfaen-product-page__gallery .woocommerce-product-gallery__image img,
 .fyfaen-product-page__gallery .flex-control-thumbs img {
 	background-color:#fff!important;
+	background-image:none!important;
 }
