@@ -39,7 +39,7 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 
 		<div class="site-footer__statement">
-			<h2>Klær som mener <span>det.</span></h2>
+			<h2>Klær som mener</h2>
 		</div>
 
 		<div class="site-footer__bottom">
