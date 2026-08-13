@@ -19,8 +19,8 @@ get_header( 'shop' );
                 <?php else : ?>
                     <h1>Hele <em>kolleksjonen.</em></h1>
                 <?php endif; ?>
+                <p class="fyfaen-shop__intro">Oversized tees, hoodies, sokker og mer. Norsk brand med fokus på kvalitet, passform og særpreg.</p>
             </div>
-            <p class="fyfaen-shop__intro">Plagg laget for hverdagen. Tunge kvaliteter, avslappede passformer og FYFAEN-attitude.</p>
         </header>
 
         <div class="fyfaen-shop__toolbar">
