@@ -14,7 +14,26 @@ defined( 'ABSPATH' ) || exit;
 			<nav class="site-footer__nav-block" aria-label="Footer">
 				<div class="site-footer__nav-title">MENY</div>
 				<div class="footer-navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => false, 'fallback_cb' => false ) ); ?>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'footer',
+							'container'      => false,
+							'fallback_cb'    => function () {
+								$shop_url     = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
+								$cart_url     = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : home_url( '/' );
+								$checkout_url = function_exists( 'wc_get_checkout_url' ) ? wc_get_checkout_url() : home_url( '/' );
+								?>
+								<ul>
+									<li><a href="<?php echo esc_url( $shop_url ); ?>">Butikk</a></li>
+									<li><a href="<?php echo esc_url( $cart_url ); ?>">Handlekurv</a></li>
+									<li><a href="<?php echo esc_url( $checkout_url ); ?>">Kasse</a></li>
+								</ul>
+								<?php
+							},
+						)
+					);
+					?>
 				</div>
 			</nav>
 		</div>
