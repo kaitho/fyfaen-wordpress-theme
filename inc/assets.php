@@ -31,3 +31,20 @@ add_action( 'wp_enqueue_scripts', function () {
         wp_enqueue_style( 'fyfaen-checkout', get_template_directory_uri() . '/assets/css/checkout.css', array( 'fyfaen-style', 'fyfaen-polish', 'fyfaen-header', 'fyfaen-footer' ), $version );
     }
 } );
+
+/**
+ * Back In Stock Notifier loads its own Bootstrap styles, so load our product
+ * overrides late enough to win the cascade without modifying the plugin.
+ */
+add_action( 'wp_enqueue_scripts', function () {
+    if ( function_exists( 'is_product' ) && is_product() ) {
+        $file = get_template_directory() . '/assets/css/notifier.css';
+        $version = file_exists( $file ) ? (string) filemtime( $file ) : wp_get_theme()->get( 'Version' );
+        wp_enqueue_style(
+            'fyfaen-notifier',
+            get_template_directory_uri() . '/assets/css/notifier.css',
+            array( 'fyfaen-product' ),
+            $version
+        );
+    }
+}, 1000 );
