@@ -27,3 +27,90 @@
 .fyfaen-product-page__gallery * {
 	--fy-soft:#fff;
 }
+
+/* FYFAEN styling for Back In Stock Notifier */
+.cwginstock-subscribe-form {
+	margin:22px 0 0!important;
+	font-family:inherit!important;
+}
+.cwginstock-subscribe-form .panel,
+.cwginstock-subscribe-form .cwginstock-panel {
+	margin:0!important;
+	border:1px solid #111!important;
+	border-radius:0!important;
+	box-shadow:none!important;
+	overflow:hidden!important;
+	background:#fff!important;
+}
+.cwginstock-subscribe-form .panel-heading,
+.cwginstock-subscribe-form .cwginstock-panel-heading {
+	background:#111!important;
+	background-image:none!important;
+	border:0!important;
+	border-radius:0!important;
+	color:#fff!important;
+	font-size:.86rem!important;
+	font-weight:850!important;
+	line-height:1.35!important;
+	letter-spacing:.01em!important;
+	padding:20px 24px!important;
+}
+.cwginstock-subscribe-form .panel-body,
+.cwginstock-subscribe-form .cwginstock-panel-body {
+	background:#fff!important;
+	border:0!important;
+	color:#111!important;
+	padding:18px 24px 22px!important;
+}
+.cwginstock-subscribe-form input[type="email"],
+.cwginstock-subscribe-form input[type="text"] {
+	width:100%!important;
+	min-height:44px!important;
+	border:1px solid #cfcfcf!important;
+	border-radius:0!important;
+	background:#fff!important;
+	color:#111!important;
+	box-shadow:none!important;
+	padding:0 12px!important;
+}
+.cwginstock-subscribe-form input[type="email"]:focus,
+.cwginstock-subscribe-form input[type="text"]:focus {
+	border-color:#111!important;
+	outline:none!important;
+	box-shadow:0 0 0 1px #111!important;
+}
+.cwginstock-subscribe-form .cwgstock_button,
+.cwginstock-subscribe-form button.cwgstock_button,
+.cwginstock-subscribe-form input.cwgstock_button {
+	width:100%!important;
+	min-height:46px!important;
+	margin-top:12px!important;
+	border:1px solid #111!important;
+	border-radius:0!important;
+	background:#111!important;
+	background-image:none!important;
+	color:#fff!important;
+	font-family:inherit!important;
+	font-size:.72rem!important;
+	font-weight:850!important;
+	letter-spacing:.05em!important;
+	text-transform:uppercase!important;
+	box-shadow:none!important;
+	cursor:pointer!important;
+}
+.cwginstock-subscribe-form .cwgstock_button:hover,
+.cwginstock-subscribe-form button.cwgstock_button:hover,
+.cwginstock-subscribe-form input.cwgstock_button:hover {
+	background:#fff!important;
+	color:#111!important;
+}
+.cwginstock-subscribe-form label,
+.cwginstock-subscribe-form .cwginstock-label {
+	color:#111!important;
+	font-size:.72rem!important;
+	font-weight:750!important;
+}
+.cwginstock-subscribe-form .wc-forward,
+.cwginstock-subscribe-form .alert {
+	border-radius:0!important;
+}
