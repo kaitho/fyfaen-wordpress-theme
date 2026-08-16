@@ -135,14 +135,14 @@ body.fyfaen-size-guide-open { overflow: hidden; }
 </style>
 
 <button type="button" class="fyfaen-size-guide-link" aria-haspopup="dialog" aria-controls="fyfaen-size-guide">
-	Størrelsesguide
+	Størrelser
 </button>
 
 <div id="fyfaen-size-guide" class="fyfaen-size-guide-overlay" role="dialog" aria-modal="true" aria-labelledby="fyfaen-size-guide-title" aria-hidden="true">
 	<div class="fyfaen-size-guide-modal">
-		<button type="button" class="fyfaen-size-guide-close" aria-label="Lukk størrelsesguide">&times;</button>
+		<button type="button" class="fyfaen-size-guide-close" aria-label="Lukk størrelser">&times;</button>
 		<div class="fyfaen-size-guide-modal__eyebrow">FYFAEN CLOTHING</div>
-		<h2 id="fyfaen-size-guide-title">Størrelsesguide</h2>
+		<h2 id="fyfaen-size-guide-title">Størrelser</h2>
 		<p class="fyfaen-size-guide-modal__intro">T-shirts og Hoodies har en oversized passform. Sammenlign gjerne målene med et plagg du allerede liker passformen på.</p>
 		<table class="fyfaen-size-guide-table">
 			<thead>
