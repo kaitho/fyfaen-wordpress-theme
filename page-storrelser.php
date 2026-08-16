@@ -15,7 +15,7 @@ get_header();
 			<div class="fyfaen-section-heading">
 				<div>
 					<div class="fyfaen-kicker">FYFAEN CLOTHING</div>
-					<h1>Størrelsesguide</h1>
+					<h1>Størrelser</h1>
 				</div>
 				<p>Rene mål for T-shirts og Hoodies med oversized passform.</p>
 			</div>
