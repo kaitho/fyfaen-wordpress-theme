@@ -23,11 +23,15 @@ defined( 'ABSPATH' ) || exit;
 								$shop_url     = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
 								$cart_url     = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : home_url( '/' );
 								$checkout_url = function_exists( 'wc_get_checkout_url' ) ? wc_get_checkout_url() : home_url( '/' );
+								$terms_page   = get_page_by_path( 'refund_returns' );
 								?>
 								<ul>
 									<li><a href="<?php echo esc_url( $shop_url ); ?>">Butikk</a></li>
 									<li><a href="<?php echo esc_url( $cart_url ); ?>">Handlekurv</a></li>
 									<li><a href="<?php echo esc_url( $checkout_url ); ?>">Kasse</a></li>
+									<?php if ( $terms_page ) : ?>
+										<li><a href="<?php echo esc_url( get_permalink( $terms_page ) ); ?>">Kjøpsvilkår</a></li>
+									<?php endif; ?>
 								</ul>
 								<?php
 							},
