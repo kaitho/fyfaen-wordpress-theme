@@ -1,0 +1,85 @@
+/* FYFAEN overrides for Back In Stock Notifier for WooCommerce. Loaded late so plugin styles cannot overwrite the theme. */
+body.single-product .cwginstock-subscribe-form .panel.panel-primary,
+body.single-product .cwginstock-subscribe-form .cwginstock-panel-primary {
+	background:#fff!important;
+	border:1px solid #111!important;
+	border-radius:0!important;
+	box-shadow:none!important;
+	overflow:hidden!important;
+}
+
+body.single-product .cwginstock-subscribe-form .panel.panel-primary > .panel-heading,
+body.single-product .cwginstock-subscribe-form .cwginstock-panel-primary > .cwginstock-panel-heading {
+	background:#111!important;
+	background-color:#111!important;
+	background-image:none!important;
+	border:0!important;
+	border-color:#111!important;
+	border-radius:0!important;
+	color:#fff!important;
+}
+
+body.single-product .cwginstock-subscribe-form .panel.panel-primary > .panel-heading h1,
+body.single-product .cwginstock-subscribe-form .panel.panel-primary > .panel-heading h2,
+body.single-product .cwginstock-subscribe-form .panel.panel-primary > .panel-heading h3,
+body.single-product .cwginstock-subscribe-form .panel.panel-primary > .panel-heading h4,
+body.single-product .cwginstock-subscribe-form .panel.panel-primary > .panel-heading h5,
+body.single-product .cwginstock-subscribe-form .panel.panel-primary > .panel-heading h6 {
+	margin:0!important;
+	color:#fff!important;
+	font-family:inherit!important;
+	font-size:.86rem!important;
+	font-weight:850!important;
+	line-height:1.35!important;
+}
+
+body.single-product .cwginstock-subscribe-form .panel.panel-primary > .panel-body,
+body.single-product .cwginstock-subscribe-form .cwginstock-panel-primary > .cwginstock-panel-body {
+	background:#fff!important;
+	background-color:#fff!important;
+	border:0!important;
+	color:#111!important;
+}
+
+body.single-product .cwginstock-subscribe-form input.cwgstock_email,
+body.single-product .cwginstock-subscribe-form input.cwgstock_name {
+	border:1px solid #cfcfcf!important;
+	border-radius:0!important;
+	background:#fff!important;
+	background-color:#fff!important;
+	color:#111!important;
+	box-shadow:none!important;
+}
+
+body.single-product .cwginstock-subscribe-form input.cwgstock_email:focus,
+body.single-product .cwginstock-subscribe-form input.cwgstock_name:focus {
+	border-color:#111!important;
+	box-shadow:0 0 0 1px #111!important;
+	outline:0!important;
+}
+
+body.single-product .cwginstock-subscribe-form .cwgstock_button,
+body.single-product .cwginstock-subscribe-form button.cwgstock_button,
+body.single-product .cwginstock-subscribe-form input.cwgstock_button {
+	background:#111!important;
+	background-color:#111!important;
+	background-image:none!important;
+	border:1px solid #111!important;
+	border-color:#111!important;
+	border-radius:0!important;
+	box-shadow:none!important;
+	color:#fff!important;
+	font-family:inherit!important;
+	font-size:.72rem!important;
+	font-weight:850!important;
+	letter-spacing:.05em!important;
+	text-transform:uppercase!important;
+}
+
+body.single-product .cwginstock-subscribe-form .cwgstock_button:hover,
+body.single-product .cwginstock-subscribe-form button.cwgstock_button:hover,
+body.single-product .cwginstock-subscribe-form input.cwgstock_button:hover {
+	background:#fff!important;
+	background-color:#fff!important;
+	color:#111!important;
+}

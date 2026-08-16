@@ -1,0 +1,12 @@
+/* FYFAEN dark header — presentation only. */
+.site-header{background:#000!important;color:#fff;border-bottom:1px solid rgba(255,255,255,.14)}
+.site-header.is-scrolled{background:#000!important;color:#fff}
+.site-branding a,.main-navigation a{color:#fff}
+.main-navigation a:hover{color:#cfcfcf}
+.fyfaen-icon-link,.fyfaen-menu-toggle{color:#fff}
+.fyfaen-icon-link:hover,.fyfaen-menu-toggle:hover{background:#222;color:#fff}
+.fyfaen-cart-count{background:#fff;color:#000}
+.fyfaen-mobile-nav{background:#000;color:#fff;border-top:1px solid rgba(255,255,255,.14)}
+.fyfaen-mobile-nav a{color:#fff;border-bottom-color:rgba(255,255,255,.14)}
+.fyfaen-mobile-nav a:hover{color:#cfcfcf}
+@media(max-width:1050px){.fyfaen-mobile-nav{border-top-color:rgba(255,255,255,.14)}}

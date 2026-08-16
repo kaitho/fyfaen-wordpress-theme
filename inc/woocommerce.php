@@ -10,18 +10,16 @@ if ( ! class_exists( 'WooCommerce' ) ) {
 // Keep WooCommerce available for its own frontend components. The theme only changes presentation.
 add_filter( 'woocommerce_enqueue_styles', '__return_true' );
 
-// Add a lightweight editorial intro above the product grid. Product data and commerce logic remain untouched.
-add_action( 'woocommerce_before_shop_loop', function () {
-	if ( ! is_shop() && ! is_product_category() ) {
-		return;
-	}
-	?>
-	<section class="fyfaen-shop-intro" aria-labelledby="fyfaen-shop-title">
-		<div>
-			<span class="fyfaen-kicker">FYFAEN CLOTHING</span>
-			<h1 id="fyfaen-shop-title">Kle deg som du mener det.</h1>
-		</div>
-		<p>Oversized tees, hoodies, sokker og mer. Norsk brand med fokus på kvalitet, passform og særpreg.</p>
-	</section>
-	<?php
-}, 8 );
+// Use a consistent Norwegian placeholder for variation selectors without touching variation logic.
+add_filter( 'woocommerce_dropdown_variation_attribute_options_args', function ( $args ) {
+	$args['show_option_none'] = 'Velg Størrelse';
+	return $args;
+} );
+
+// Final presentation fallback: replace WooCommerce's default placeholder text everywhere
+// a variation dropdown is rendered, while leaving all option values and variation logic intact.
+add_filter( 'woocommerce_dropdown_variation_attribute_options_html', function ( $html ) {
+	$html = str_replace( 'Velg et alternativ', 'Velg Størrelse', $html );
+	$html = str_replace( 'Velg et Alternativ', 'Velg Størrelse', $html );
+	return $html;
+} );
