@@ -45,5 +45,13 @@ function fyfaen_primary_menu_fallback() {
 
 add_filter( 'body_class', function ( $classes ) {
 	$classes[] = 'fyfaen-theme';
+
+	if ( is_page() ) {
+		$page = get_queried_object();
+		if ( $page && ! empty( $page->post_name ) ) {
+			$classes[] = 'fyfaen-page-' . sanitize_html_class( $page->post_name );
+		}
+	}
+
 	return $classes;
 } );
