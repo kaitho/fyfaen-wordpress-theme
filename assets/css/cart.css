@@ -22,8 +22,10 @@
 .woocommerce-cart .cart_totals h2{margin:0 0 24px;font-size:1.5rem;letter-spacing:-.035em;font-weight:900}
 .woocommerce-cart .cart_totals table.shop_table{margin:0 0 20px}
 .woocommerce-cart .cart_totals table.shop_table th,.woocommerce-cart .cart_totals table.shop_table td{padding:12px 0;border-bottom:1px solid var(--fy-line)}
-.woocommerce-cart .wc-proceed-to-checkout a.checkout-button{border-radius:0;background:#000;padding:17px;text-transform:uppercase;letter-spacing:.06em;font-size:.78rem;font-weight:900}
-.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover{background:#292929}
+/* Primary cart CTA — matches the FYFAEN black/white button language used across the theme. */
+.woocommerce-cart .wc-proceed-to-checkout{padding:0}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:50px;margin:0;border:0;border-radius:0;background:#000;color:#fff;padding:0 22px;text-transform:none;letter-spacing:0;font-size:.9rem;font-weight:850;line-height:1.2;text-decoration:none;transition:transform .2s,background .2s}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover{background:#292929;color:#fff;transform:translateY(-2px)}
 .woocommerce-cart .return-to-shop a.button{border-radius:0}
 .woocommerce-cart .woocommerce-message,.woocommerce-cart .woocommerce-info,.woocommerce-cart .woocommerce-error{border-top:2px solid #111;background:#fff;color:#111}
 @media(max-width:700px){
@@ -48,4 +50,5 @@
  .woocommerce-cart .cart_totals table.shop_table tbody,.woocommerce-cart .cart_totals table.shop_table tr{display:table-row}
  .woocommerce-cart .cart_totals table.shop_table th,.woocommerce-cart .cart_totals table.shop_table td{display:table-cell}
  .woocommerce-cart .cart_totals table.shop_table th{width:50%}
+ .woocommerce-cart .wc-proceed-to-checkout a.checkout-button{min-height:48px;padding:0 18px;font-size:.86rem}
 }
