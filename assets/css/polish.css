@@ -62,6 +62,11 @@ html,body{overflow-x:hidden}
 .cwginstock-subscribe-form .panel-body,.cwginstock-subscribe-form .cwginstock-panel-body{padding:16px 18px 18px!important}
 .woocommerce-message,.woocommerce-info,.woocommerce-error{margin:0 0 18px!important;padding:13px 14px!important;font-size:.78rem!important;line-height:1.45!important}
 .woocommerce-message .button,.woocommerce-info .button,.woocommerce-error .button{width:100%;margin-top:10px!important;text-align:center}
+/* Mobile cart notice: keep the FYFAEN black/white look without the default button block/pseudo icon. */
+.woocommerce-message::before,.woocommerce-info::before,.woocommerce-error::before{display:none!important;content:none!important}
+.woocommerce-message,.woocommerce-info,.woocommerce-error{background:#000!important;color:#fff!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.woocommerce-message a,.woocommerce-info a,.woocommerce-error a{color:#fff!important}
+.woocommerce-message .button,.woocommerce-info .button,.woocommerce-error .button{display:inline-flex!important;align-items:center;justify-content:center;background:transparent!important;color:#fff!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;margin:8px 0 0!important;text-decoration:underline!important;text-underline-offset:4px;font-weight:800!important}
 .site-footer{padding:52px 0 24px}
 .site-footer__grid{gap:28px;padding-bottom:38px}
 .site-footer__statement{padding-top:12px}
