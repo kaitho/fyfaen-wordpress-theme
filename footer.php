@@ -48,7 +48,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="site-footer__bottom">
 			<span>&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?></span>
-			<span>fyfaen.store</span>
+			<span>fyfaen.store v1.0.0</span>
 		</div>
 	</div>
 </footer>
