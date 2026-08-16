@@ -15,7 +15,7 @@ get_header();
 			<div class="fyfaen-section-heading">
 				<div>
 					<div class="fyfaen-kicker">FYFAEN CLOTHING</div>
-					<h1>Størrelsesguide</h1>
+					<h1>Størrelser</h1>
 				</div>
 				<p>Rene mål for T-shirts og Hoodies med oversized passform.</p>
 			</div>
@@ -45,10 +45,6 @@ get_header();
 						<tr><td>XXL</td><td>82 cm</td><td>66 cm</td><td>61,5 cm</td><td>25,5 cm</td></tr>
 					</tbody>
 				</table>
-			</div>
-
-			<div class="fyfaen-size-page__note">
-				<strong>Tips:</strong> T-shirts og Hoodies er laget med oversized passform. Sammenlign målene med et plagg du allerede bruker for å finne riktig størrelse.
 			</div>
 		</div>
 	</section>
@@ -115,13 +111,6 @@ get_header();
 
 .fyfaen-size-page__table tbody tr:last-child td {
 	border-bottom: 0;
-}
-
-.fyfaen-size-page__note {
-	max-width: 650px;
-	margin-top: 28px;
-	color: #737373;
-	font-size: .86rem;
 }
 
 @media (max-width: 700px) {
