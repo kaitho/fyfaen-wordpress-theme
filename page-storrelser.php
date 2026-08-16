@@ -46,10 +46,6 @@ get_header();
 					</tbody>
 				</table>
 			</div>
-
-			<div class="fyfaen-size-page__note">
-				<strong>Tips:</strong> T-shirts og Hoodies er laget med oversized passform. Sammenlign målene med et plagg du allerede bruker for å finne riktig størrelse.
-			</div>
 		</div>
 	</section>
 </main>
@@ -115,13 +111,6 @@ get_header();
 
 .fyfaen-size-page__table tbody tr:last-child td {
 	border-bottom: 0;
-}
-
-.fyfaen-size-page__note {
-	max-width: 650px;
-	margin-top: 28px;
-	color: #737373;
-	font-size: .86rem;
 }
 
 @media (max-width: 700px) {
