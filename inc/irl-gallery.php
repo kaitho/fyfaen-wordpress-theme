@@ -20,8 +20,8 @@ add_action( 'woocommerce_after_shop_loop', function () {
 				<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2024/12/239479DD-DC09-482C-A22D-226D89FD0C15.jpg" alt="FYFAEN oversized T-shirt i hverdagen" loading="lazy"></figure>
 				<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2024/12/5501DBDF-5A77-47C3-A937-C4E6D506A519.jpg" alt="FYFAEN T-shirt i bruk" loading="lazy"></figure>
 				<figure class="fyfaen-irl__item fyfaen-irl__item--tall"><img src="https://fyfaen.store/wp-content/uploads/2024/12/72DFE85E-B426-4A81-B7A5-41A2F7548135.jpg" alt="FYFAEN i gatemiljø" loading="lazy"></figure>
-				<figure class="fyfaen-irl__item fyfaen-irl__item--tall"><img src="https://fyfaen.store/wp-content/uploads/2025/07/Skjermbilde-2025-07-08-235706.png" alt="FYFAEN backstage" loading="lazy"></figure>
-				<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2024/12/IMG_3296.jpg" alt="FYFAEN hvit T-shirt" loading="lazy"></figure>
+				<figure class="fyfaen-irl__item fyfaen-irl__item--tall"><img src="https://fyfaen.store/wp-content/uploads/2024/12/IMG_3296.jpg" alt="FYFAEN hvit T-shirt" loading="lazy"></figure>
+				<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2025/07/Skjermbilde-2025-07-08-235706.png" alt="FYFAEN backstage" loading="lazy"></figure>
 			</div>
 		</div>
 	</section>
