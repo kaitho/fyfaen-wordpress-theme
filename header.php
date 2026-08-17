@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div class="fyfaen-announcement"><div class="fyfaen-announcement__inner container">Fri frakt når du handler for over 549,-</div></div>
+<div class="fyfaen-announcement"><div class="fyfaen-announcement__inner container">Fri frakt ut hele August</div></div>
 <header class="site-header">
 	<div class="site-header__inner container">
 		<div class="site-branding">
