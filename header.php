@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 	<style>
 		.fyfaen-announcement { font-size: .8rem; }
 		@media (max-width: 700px) {
-			.fyfaen-announcement { font-size: .68rem; }
+			.fyfaen-announcement { font-size: .75rem; }
 		}
 	</style>
 </head>
