@@ -37,11 +37,11 @@ add_action( 'wp_head', function () {
 		.fyfaen-irl{padding:100px 0;background:#fff;border-top:1px solid var(--fy-line);border-bottom:1px solid var(--fy-line);overflow:hidden}
 		.fyfaen-irl__intro{max-width:340px;margin:0;color:var(--fy-muted);font-weight:650}
 		.fyfaen-irl__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:stretch}
-		.fyfaen-irl__item{margin:0;overflow:hidden;background:#fff;min-width:0;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;line-height:0}
+		.fyfaen-irl__item{margin:0;overflow:hidden;background:#fff;min-width:0;width:100%;height:420px;display:flex;align-items:center;justify-content:center;line-height:0}
 		.fyfaen-irl__item img{width:100%;height:100%;display:block;object-fit:contain;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
 		.fyfaen-irl__item:hover img{transform:scale(1.01)}
-		@media(max-width:900px){.fyfaen-irl__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}
-		@media(max-width:700px){.fyfaen-irl{padding:65px 0}.fyfaen-irl__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.fyfaen-irl__intro{margin-top:8px}}
+		@media(max-width:900px){.fyfaen-irl__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.fyfaen-irl__item{height:360px}}
+		@media(max-width:700px){.fyfaen-irl{padding:65px 0}.fyfaen-irl__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.fyfaen-irl__item{height:280px}.fyfaen-irl__intro{margin-top:8px}}
 	</style>
 	<?php
 } );
