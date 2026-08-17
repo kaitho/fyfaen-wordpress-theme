@@ -8,10 +8,10 @@ add_action( 'woocommerce_after_shop_loop', function () {
 		return;
 	}
 	?>
-	<section class="fyfaen-irl" aria-label="FYFAEN IRL">
+	<section class="fyfaen-irl" aria-label="Ekte kvalitet ekte folk">
 		<div class="container">
 			<div class="fyfaen-section-heading">
-				<div><p class="fyfaen-kicker">FYFAEN IRL</p><h2>Fete klær.<br><em>Fete folk.</em></h2></div>
+				<div><h2>EKTE KVALITET<br><em>EKTE FOLK</em></h2></div>
 				<p class="fyfaen-irl__intro">Sett på ekte folk, ute i verden. FYFAEN er laget for å brukes.</p>
 			</div>
 
