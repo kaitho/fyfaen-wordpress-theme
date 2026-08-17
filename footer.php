@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
 			<div>
 				<div class="site-footer__eyebrow">FYFAEN CLOTHING</div>
 				<div class="site-footer__brand">FYFAEN</div>
-				<p class="site-footer__tagline">Oversized tees, hoodies, sokker og mer. Norsk brand med fokus på kvalitet, passform og særpreg.</p>
+				<p class="site-footer__tagline">Oversized tees, hoodies, sokker. Norsk brand med fokus på kvalitet, passform og særpreg.</p>
 			</div>
 
 			<nav class="site-footer__nav-block" aria-label="Footer">
