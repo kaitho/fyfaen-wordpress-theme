@@ -6,6 +6,12 @@ defined( 'ABSPATH' ) || exit;
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
+	<style>
+		.fyfaen-announcement { font-size: .8rem; }
+		@media (max-width: 700px) {
+			.fyfaen-announcement { font-size: .68rem; }
+		}
+	</style>
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
