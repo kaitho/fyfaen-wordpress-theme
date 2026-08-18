@@ -13,3 +13,4 @@ require_once get_template_directory() . '/inc/assets.php';
 require_once get_template_directory() . '/inc/woocommerce.php';
 require_once get_template_directory() . '/inc/size-guide.php';
 require_once get_template_directory() . '/inc/irl-gallery.php';
+require_once get_template_directory() . '/inc/admin-cleanup.php';
