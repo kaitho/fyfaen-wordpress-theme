@@ -6,7 +6,7 @@ get_header( 'shop' );
     <div class="container">
         <header class="fyfaen-shop__hero">
             <div>
-                <p class="fyfaen-eyebrow">FYFAEN CLOTHING / 2026</p>
+                <p class="fyfaen-eyebrow">FYFAEN CLOTHING / est 2024</p>
                 <?php if ( is_product_category() ) : ?>
                     <h1><?php woocommerce_page_title(); ?></h1>
                 <?php else : ?>
