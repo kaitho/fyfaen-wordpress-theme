@@ -4,11 +4,10 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Hide only the two known, irrelevant admin notices without disabling the
- * underlying plugins, WooCommerce checks or other WordPress warnings.
+ * Hide only the two known, irrelevant admin notices.
  *
- * Some of these notices are injected after the initial admin page render,
- * so a MutationObserver is used in addition to the initial scan.
+ * This is intentionally scoped to actual WordPress notice elements so the
+ * admin page itself can never be hidden.
  */
 add_action( 'admin_footer', function () {
 	?>
@@ -16,32 +15,38 @@ add_action( 'admin_footer', function () {
 	(function () {
 		'use strict';
 
+		const noticeSelector = '.notice, .updated, .error, .is-dismissible';
+
 		const shouldHide = function (notice) {
-			if (!notice || notice.nodeType !== 1) return false;
+			if (!notice || notice.nodeType !== 1 || !notice.matches(noticeSelector)) {
+				return false;
+			}
 
 			const text = (notice.textContent || '')
 				.replace(/\s+/g, ' ')
 				.trim()
 				.toLowerCase();
 
-			const isAstraNotice = text.indexOf('astra pro requires astra to be your active theme') !== -1;
-			const isWooCompatibilityNotice =
-				text.indexOf('woocommerce har oppdaget') !== -1 &&
-				text.indexOf('inkompatible') !== -1 &&
-				text.indexOf('woocommerce-funksjoner') !== -1;
-
-			return isAstraNotice || isWooCompatibilityNotice;
+			return (
+				text.indexOf('astra pro requires astra to be your active theme') !== -1 ||
+				(
+					text.indexOf('woocommerce har oppdaget') !== -1 &&
+					text.indexOf('inkompatible') !== -1 &&
+					text.indexOf('woocommerce-funksjoner') !== -1
+				)
+			);
 		};
 
 		const scan = function (root) {
-			if (!root || root.nodeType !== 1) return;
-
-			if (shouldHide(root)) {
-				root.style.setProperty('display', 'none', 'important');
+			if (!root || root.nodeType !== 1) {
 				return;
 			}
 
-			root.querySelectorAll('.notice, .updated, .error, .is-dismissible').forEach(function (notice) {
+			if (root.matches(noticeSelector) && shouldHide(root)) {
+				root.style.setProperty('display', 'none', 'important');
+			}
+
+			root.querySelectorAll(noticeSelector).forEach(function (notice) {
 				if (shouldHide(notice)) {
 					notice.style.setProperty('display', 'none', 'important');
 				}
@@ -49,12 +54,18 @@ add_action( 'admin_footer', function () {
 		};
 
 		const init = function () {
+			if (!document.body) {
+				return;
+			}
+
 			scan(document.body);
 
 			const observer = new MutationObserver(function (mutations) {
 				mutations.forEach(function (mutation) {
 					mutation.addedNodes.forEach(function (node) {
-						scan(node);
+						if (node.nodeType === 1) {
+							scan(node);
+						}
 					});
 				});
 			});
@@ -62,11 +73,11 @@ add_action( 'admin_footer', function () {
 			observer.observe(document.body, { childList: true, subtree: true });
 		};
 
-		if (document.readyState === 'loading') {
-			document.addEventListener('DOMContentLoaded', init);
-		} else {
-			init();
-		}
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', init);
+	} else {
+		init();
+	}
 	})();
 	</script>
 	<?php
