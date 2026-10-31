@@ -75,6 +75,7 @@ if ( empty( $featured ) && function_exists( 'wc_get_products' ) ) {
 			<figure class="fyfaen-irl__item fyfaen-irl__item--tall"><img src="https://fyfaen.store/wp-content/uploads/2025/07/Skjermbilde-2025-07-08-235706.png" alt="FYFAEN backstage" loading="lazy"></figure>
 			<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2024/12/IMG_3296.jpg" alt="FYFAEN hvit T-shirt" loading="lazy"></figure>
 			<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2024/12/IMG_1419-scaled.jpg" alt="FYFAEN svart T-shirt" loading="lazy"></figure>
+			<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2025/04/image-scaled.jpg" alt="FYFAEN i bruk" loading="lazy"></figure>
 		</div>
 	</div>
 </section>

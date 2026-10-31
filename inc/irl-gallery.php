@@ -22,6 +22,7 @@ add_action( 'woocommerce_after_shop_loop', function () {
 				<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2024/12/239479DD-DC09-482C-A22D-226D89FD0C15.jpg" alt="FYFAEN oversized T-shirt i hverdagen" loading="lazy"></figure>
 				<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2024/12/IMG_3296.jpg" alt="FYFAEN hvit T-shirt" loading="lazy"></figure>
 				<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2025/07/Skjermbilde-2025-07-08-235706.png" alt="FYFAEN backstage" loading="lazy"></figure>
+				<figure class="fyfaen-irl__item"><img src="https://fyfaen.store/wp-content/uploads/2025/04/image-scaled.jpg" alt="FYFAEN i bruk" loading="lazy"></figure>
 			</div>
 		</div>
 	</section>
